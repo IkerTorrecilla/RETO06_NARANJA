@@ -1,0 +1,23 @@
+name: equipo_naranja_reto6
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - scikit-learn
+  - imbalanced-learn
+  - requests
+  - beautifulsoup4
+  - wordcloud
+  - chardet
+  - joblib
+  - missingno
+  - holidays
+  - umap-learn
+  - yellowbrick
+  - hdbscan
