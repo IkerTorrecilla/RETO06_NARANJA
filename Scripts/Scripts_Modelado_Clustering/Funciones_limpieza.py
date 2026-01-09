@@ -37,7 +37,7 @@ def detectar_tipos_columnas(df: pd.DataFrame, umbral_fecha: float = 0.8):
             continue
 
         # ============================
-        # NUMÉRICOS
+        # NUMERICOS
         # ============================
         if pd.api.types.is_numeric_dtype(dtype):
             valores_unicos = set(serie.dropna().unique())
@@ -59,7 +59,7 @@ def detectar_tipos_columnas(df: pd.DataFrame, umbral_fecha: float = 0.8):
             continue
 
         # ============================
-        # CATEGÓRICAS (SOLO DETECTAR)
+        # CATEGORICAS (SOLO DETECTAR)
         # ============================
         columnas_categoricas.append(col)
 

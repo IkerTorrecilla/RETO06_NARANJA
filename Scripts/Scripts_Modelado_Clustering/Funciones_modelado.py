@@ -61,7 +61,7 @@ from matplotlib.cm import ScalarMappable
 
 
 # -------------------------------
-# Función para probar con y sin SMOTE Y APLICANDO PCA O SIN APLICAR PERO CON TRUNCATED SVD (MEJOR PARA SPARSE)
+# Funcion para probar con y sin SMOTE Y APLICANDO PCA O SIN APLICAR PERO CON TRUNCATED SVD (MEJOR PARA SPARSE)
 
 
 def preparar_datos(X, y, usar_smote=True, aplicar_pca=False, varianza_objetivo=0.9, random_state=42):
@@ -98,7 +98,7 @@ def preparar_datos(X, y, usar_smote=True, aplicar_pca=False, varianza_objetivo=0
         pca_temp.fit(X_prep)
         cum_var = pca_temp.explained_variance_ratio_.cumsum()
         
-        # Número de componentes para alcanzar varianza objetivo
+        # Numero de componentes para alcanzar varianza objetivo
         n_comp = np.argmax(cum_var >= varianza_objetivo) + 1
         
         # Ajustamos PCA final con n_comp
@@ -183,7 +183,7 @@ def evaluar_modelo(modelo, X_test, y_test, nombre_modelo="", umbral=0.3):
 
     plt.figure(figsize=(5, 4))
     plt.plot(fpr, tpr, label=f"AUC = {roc_auc:.2f}")
-    plt.plot([0, 1], [0, 1], linestyle="--")  # Línea aleatoria
+    plt.plot([0, 1], [0, 1], linestyle="--")  
     plt.title(f"{nombre_modelo} - Curva ROC")
     plt.xlabel("FPR")
     plt.ylabel("TPR")
@@ -230,7 +230,7 @@ def tabla_comparativa_modelos(modelos, X_test, y_test, umbral=0.4):
         # Predicciones con umbral
         y_pred = (y_prob >= umbral).astype(int)
 
-        # Calcular métricas
+        # Calcular mEtricas
         metrics = {
             "Modelo": nombre,
             "Accuracy": accuracy_score(y_test, y_pred),
