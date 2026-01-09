@@ -1,4 +1,4 @@
 Algoritmo,Parametros,Nº Clusters,Silhouette,Distancia intra-cluster,Distancia inter-cluster
-K-Means,-,4,0.1555006355047226,3.4403744,1.858619
-Clustering Jerárquico,"Distancia = Euclidea, metodo = complete",4,0.1479078233242035,3.4673836,1.8235705
-DBSCAN,"min_samples = 40, epsilon = 2.1",4,0.1493392288684845,3.4299445,1.8603132
+K-Means,-,4,0.15550064,3.4403725,1.858619
+Clustering Jerárquico,"Distancia = Euclidea, metodo = complete",4,0.14790782,3.4673805,1.8235705
+DBSCAN,"min_samples = 40, epsilon = 2.1",4,0.14933924,3.429947,1.8603132
