@@ -13,12 +13,14 @@ El proyecto se ha desarrollado en Python, en la version 3.11 utilizando el entor
 
 ## Estructura del proyecto
 
+```text
 RET006_NARANJA/
 │
 ├── Datos/
 │ ├── DatosOriginales/ # Datos en bruto (CSV originales) -> Esta añadido en el gitignore para que no se suba
 │ ├── DatosTransformados/ # Datos tras el proceso de limpieza y transformación
 │ ├── Resultados/-> Sirve para el modelado y para la comparacion de los algoritmos del clustering ya que contiene la tabla de la comparacion de las metricas de los algoritmos de clustering y los dataset con los datos meteorologicos y los cluster asignados  
+
 ├── Scripts/
 │ ├── Script_Analisis_Exploratorio/ # Análisis exploratorio inicial de los datos
 │ │
@@ -33,6 +35,8 @@ RET006_NARANJA/
 ├── environment.yml # Definición del entorno Conda del proyecto
 ├── .gitignore # Archivos y carpetas ignoradas por Git
 ├── README.md # Documentación principal del proyecto
+
+```
 
 ## Datos Transformados
 
